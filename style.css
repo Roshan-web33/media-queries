@@ -140,12 +140,34 @@ section > .img >img{
          
     }
 }
-   
-.hamburger{
+.humburger{
+    position: fixed;
+    right: 2px;
+    top: 20px;
+    background-color: rgb(194, 192, 192);
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: none;
     display: none;
-    width:10vw ;
-    height: 5vh;
+
+}
+.close{
+    position: fixed;
+
+   
+    right: 2px;
+    top: 20px;
+    background-color: rgb(194, 192, 192);
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    display: none;
     
+
 }
 
 
@@ -153,10 +175,8 @@ section > .img >img{
  /* tablet */
  /* table */
 @media (max-width: 768px) and (max-height: 1024px) {
-    .navbar > .logo{
-         margin-left: 0;
-         font-size: 1rem;
-    }
+
+   
     .navbar > .nav-link > ul >li > a{
         margin: 1rem;
 
@@ -200,20 +220,20 @@ section > .img >img{
 
 /* mobile */
 @media (max-width:375px) and (max-height: 747px){
-   .hamburger{
-    display: block;
-    margin-top: 1rem;
-    margin-right: .5rem;
-    transition: all 5s ease;
-   }
+     .humburger{
+        display: block;
+    }
+    .nav-link  .humburger:focus + ul{
+        display: flex;
 
-   .hamburger :active{
-    
-    
-    
-
+    }
+    .navbar > .logo{
+         margin-left: 0;
+         font-size: 1rem;
+    }
   
-   }
+
+   
     .navbar > .logo{
          font-size: .5rem;
          width: 7rem;
@@ -221,12 +241,12 @@ section > .img >img{
     }
 
     .navbar > .nav-link{
-        position: fixed;
-        height: 747px;
+        
          display: flex;
          flex-direction: column;
-         width: 200px;
-         margin-left: 570px;
+        
+         
+        
         
 
     
@@ -234,16 +254,16 @@ section > .img >img{
 
    
      .navbar > .nav-link > ul {
-       display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         
-         
-        
-        
-        
+        display: flex;
+        position: fixed;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: black;
+        height: 747px;
+        width: 200px;
+        display: none;
         
         
         
